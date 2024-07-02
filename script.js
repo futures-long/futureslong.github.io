@@ -47,32 +47,17 @@ function calculate() {
     document.getElementById('result').innerText = `Средняя цена открытия: $${averageOpenPrice.toFixed(6)}\nЦена ликвидации: $${liquidationPrice.toFixed(6)}`;
 }
 
-// Функция для установки темы
-function setTheme(themeName) {
-  localStorage.setItem('theme', themeName);
-  document.getElementById('theme-style').setAttribute('href', themeName);
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const sun = document.getElementById('sun');
+    const moon = document.getElementById('moon');
+    const themeStylesheet = document.getElementById('theme-stylesheet');
 
-// Функция для инициализации темы при загрузке страницы
-function initTheme() {
-  const storedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'stylesDARK.css' : 'styles(orig).css');
-  setTheme(storedTheme);
-}
+    sun.addEventListener('click', function() {
+        themeStylesheet.setAttribute('href', 'styles(light).css');
+    });
 
-// Функция для смены темы с анимацией
-function changeTheme(newTheme) {
-  document.body.style.transition = 'background-color 0.5s';
-  setTheme(newTheme);
-}
-
-// Установка начальной темы при загрузке страницы
-document.addEventListener('DOMContentLoaded', initTheme);
-
-// Добавление слушателей событий для элементов #moon и #sun
-document.getElementById('moon').addEventListener('click', function() {
-  changeTheme('styles.css');
+    moon.addEventListener('click', function() {
+        themeStylesheet.setAttribute('href', 'styles.css');
+    });
 });
 
-document.getElementById('sun').addEventListener('click', function() {
-  changeTheme('styles(light).css');
-});
