@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #fff;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Выравнивание по верху */
+    align-items: center;
+    min-height: 100vh; /* Контейнер на весь экран */
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #000, #104);
+    position: relative;
+z-index: 1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+h1 {
+    font-family: 'Rubik One', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #69f, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+    text-align: center;
+z-index: 1;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    text-align: left;
+z-index: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+z-index: 1;
+}
+
+input[type="number"],
+input[type="range"] {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 13px;
+    border: solid 2px #9bf;
+    background-color: rgba(255, 255, 255, 0.1);
+z-index: 1;
+}
+
+input[type="number"],
+input[type="range"]:after {
+    border: solid 1.5px #9bf;
+z-index: 1;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+z-index: 1;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+z-index: 1;
+}
+
+button:hover {
+    background-color: #0056b3;
+z-index: 1;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+z-index: 1;
+}
+
+.leverage-value {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 10px;
+z-index: 1;
+}
+
+.additional-deposits {
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px; /* Ограничение высоты контейнера */
+    overflow-y: auto; /* Прокрутка для дополнительных депозитов */
+    -ms-overflow-style: none;  /* Убираем прокрутку в IE и Edge */
+    scrollbar-width: none;  /* Убираем прокрутку в Firefox */
+z-index: 1;
+}
+
+.additional-deposits::-webkit-scrollbar {
+    display: none;  /* Убираем прокрутку в Chrome, Safari и Opera */
+z-index: 1;
+}
+
+.radio-group {
+    align-items: center;
+z-index: 1;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+	z-index:1;
+}
+
+.radio-container label {
+    margin: 0 10px;
+	z-index: 1;
+}
+
+/* Fixed graph styles */
+#fixed-graph {
+    position: fixed;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Чтобы элементы под графиком оставались интерактивными */
+    z-index: 0; /* Помещаем график позади всех остальных элементов */
+    filter: blur(3px);
+}
+
+.lab {
+  margin: 5px;
+}
