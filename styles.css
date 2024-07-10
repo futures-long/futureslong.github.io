@@ -28,7 +28,7 @@ z-index: 1;
 h1 {
     font-family: 'Rubik One', sans-serif;
     text-transform: uppercase;
-    color: var(--tg-theme-link-color);
+    color: var(--tg-theme-distructive-text-color);
     display: table;
     margin: 20px auto;
     text-align: center;
