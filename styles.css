@@ -22,7 +22,6 @@ html, body {
     padding: 20px;
     background-image: linear-gradient(to top, var(--tg-theme-accent-text-color), var(--tg-theme-bg-color));
     position: relative;
-	opacity: 50%;
 z-index: 1;
 }
 
