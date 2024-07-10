@@ -24,12 +24,17 @@ html, body {
 z-index: 1;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
 h1 {
-    color: var(--tg-theme-text-color);
-	text-shadow: 0px 0px 10px var(--tg-theme-subtitle-text-color);
-    margin: 20px auto;
-    text-align: center;
-z-index: 1;
+  font-family: 'Rubik One', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, var(--tg-theme-text-color), var(--tg-theme-subtitle-text-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
 }
 
 .form-group {
