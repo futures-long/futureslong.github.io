@@ -5,7 +5,7 @@
 }
 
 html, body {
-    color: var(--tg-theme-text-color);
+    color: var(--tg-theme-bg-color);
     height: 100%;
     font-family: Arial, sans-serif;
     overflow-y: auto;
@@ -19,8 +19,9 @@ html, body {
     min-height: 100vh; /* Контейнер на весь экран */
     width: 100%;
     padding: 20px;
-    background-image: linear-gradient(to top, var(--tg-theme-header-bg-color), var(--tg-theme-bg-color));
+    background-image: linear-gradient(to top, var(--tg-theme-accent-text-color), var(--tg-theme-bg-color));
     position: relative;
+	opacity: 50%;
 z-index: 1;
 }
 
@@ -29,7 +30,7 @@ h1 {
   font-family: 'Rubik One', sans-serif;
   font-size: 35px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, var(--tg-theme-text-color), var(--tg-theme-subtitle-text-color));
+  background: linear-gradient(90deg, var(--tg-theme-text-color), var(--tg-theme-accent-text-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0B2349;
@@ -61,14 +62,14 @@ input[type="range"] {
     font-size: 1rem;
     box-sizing: border-box;
     border-radius: 13px;
-    border: solid 2px var(--tg-theme-hint-color);
+    border: solid 2px var(--tg-theme-accent-text-color);
     background-color: var(--tg-theme-bg-color);
 z-index: 1;
 }
 
 input[type="number"],
 input[type="range"]:after {
-    border: solid 1.5px var(--tg-theme-hint-color);
+    border: solid 1.5px var(--tg-theme-accent-text-color);
 z-index: 1;
 }
 
@@ -81,7 +82,7 @@ button {
     padding: 10px 15px;
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
-    border: solid 1.5px var(--tg-theme-header-bg-color);
+    border: solid 1.5px var(--tg-theme-accent-text-color);
     border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
@@ -90,7 +91,7 @@ z-index: 1;
 }
 
 button:hover {
-    background-color: var(--tg-theme-header-bg-color);
+    background-color: var(--tg-theme-accent-text-color);
 z-index: 1;
 }
 
@@ -150,6 +151,7 @@ z-index: 1;
     pointer-events: none; /* Чтобы элементы под графиком оставались интерактивными */
     z-index: 0; /* Помещаем график позади всех остальных элементов */
     filter: blur(3px);
+	opacity: 50%;
 }
 
 .lab {
