@@ -35,6 +35,8 @@ h1 {
   color: #0B2349;
   display: table;
   margin: 20px auto;
+	z-index: 1;
+	text-align: center;
 }
 
 .form-group {
