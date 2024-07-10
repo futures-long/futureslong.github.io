@@ -19,7 +19,7 @@ html, body {
     min-height: 100vh; /* Контейнер на весь экран */
     width: 100%;
     padding: 20px;
-    background-image: linear-gradient(to bottom, var(--tg-theme-secondary-bg-color), var(--tg-theme-secondary-bg-color));
+    background-image: linear-gradient(to bottom, var(--tg-theme-secondary-bg-color), var(--tg-theme-bg-color));
     position: relative;
 z-index: 1;
 }
