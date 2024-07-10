@@ -81,7 +81,7 @@ button {
     padding: 10px 15px;
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
-    border: solid 1px var(--tg-theme-text-color);
+    border: solid 1.3px var(--tg-theme-text-color);
     border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
