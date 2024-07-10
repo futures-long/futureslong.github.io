@@ -157,3 +157,7 @@ z-index: 1;
 .lab {
   margin: 5px;
 }
+
+#result {
+	color: var(--tg-theme-bg-color);
+}
