@@ -91,8 +91,7 @@ z-index: 1;
 button {
     padding: 10px 15px;
     background-color: var(--tg-theme-accent-text-color);;
-    color: var(--tg-theme-bg-color);;
-    border: solid 1.5px var(--tg-theme-bg-color);
+    color: var(--tg-theme-bg-color);
     border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
@@ -169,5 +168,5 @@ z-index: 1;
 }
 
 #result {
-	color: var(--tg-theme-bg-color);
+	color: var(--tg-theme-text-color);
 }
