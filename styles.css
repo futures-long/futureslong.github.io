@@ -35,9 +35,8 @@ z-index: 1;
   height: 100%;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
 h1 {
-  font-family: 'Rubik One', sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 35px;
   text-transform: uppercase;
   background: linear-gradient(90deg, var(--tg-theme-text-color), var(--tg-theme-accent-text-color));
