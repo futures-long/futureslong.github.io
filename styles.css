@@ -167,6 +167,15 @@ z-index: 1;
   margin: 5px;
 }
 
+#short {
+	color: var(--tg-theme-destructive-text-color);
+}
+
+#long {
+	color: var(--tg-theme-destructive-text-color);
+	hue-rotate: (200deg);
+}
+
 #result {
 	color: var(--tg-theme-text-color);
 }
