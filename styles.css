@@ -20,7 +20,7 @@ html, body {
     min-height: 100vh; /* Контейнер на весь экран */
     width: 100%;
     padding: 20px;
-    background-image: linear-gradient(to top, var(--tg-theme-accent-text-color), var(--tg-theme-bg-color));
+    background-image: linear-gradient(to top, rgba(var(--tg-theme-accent-text-color), 0.5), rgba(var(--tg-theme-bg-color), 0.5));
     position: relative;
 z-index: 1;
 }
