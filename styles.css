@@ -90,7 +90,7 @@ z-index: 1;
 button {
     padding: 10px 15px;
     background-color: var(--tg-theme-accent-text-color);
-    color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-button-text-color);
     border-radius: 30px;
 	border: solid 1.5px var(--tg-theme-accent-text-color);
     cursor: pointer;
