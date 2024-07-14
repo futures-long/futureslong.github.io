@@ -168,12 +168,11 @@ z-index: 1;
 }
 
 #short {
-	color: var(--tg-theme-destructive-text-color);
+	color: #E94359;
 }
 
 #long {
-	color: var(--tg-theme-destructive-text-color);
-	hue-rotate: (200deg);
+	color: #00A170;
 }
 
 #result {
