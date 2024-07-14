@@ -176,6 +176,14 @@ z-index: 1;
 	color: #00A170;
 }
 
+#longtxt {
+ color: #00A170;
+}
+
+#shorttxt {
+	color: #E94359;
+}
+
 #result {
 	color: var(--tg-theme-text-color);
 }
