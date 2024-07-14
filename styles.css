@@ -89,10 +89,10 @@ z-index: 1;
 
 button {
     padding: 10px 15px;
-    background-color: var(--tg-theme-accent-text-color);;
+    background-color: var(--tg-theme-accent-text-color);
     color: var(--tg-theme-bg-color);
     border-radius: 30px;
-	border: none;
+	border: solid 1.5px var(--tg-theme-accent-text-color);
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 10px;
@@ -100,7 +100,8 @@ z-index: 1;
 }
 
 button:hover {
-    background-color: var(--tg-theme-text-color);
+    background-color: var(--tg-theme-bg-color);
+color: var(--tg-theme-accent-text-color);
 z-index: 1;
 }
 
